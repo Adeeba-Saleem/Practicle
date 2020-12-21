@@ -7,7 +7,7 @@ function App() {
           <div className="container mt-5">
             <div className="row">
               <Col>
-              <h1><Badge color="info">POPULAR GROUPS</Badge> <span dark color="primary">UPCOMING EVENTS</span></h1>
+              <h1><Badge color="info" style={{color: "black"}}>POPULAR GROUPS</Badge> <span dark color="primary">UPCOMING EVENTS</span></h1>
               </Col>
             </div>
           </div>

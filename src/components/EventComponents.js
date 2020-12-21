@@ -53,15 +53,15 @@ class Event extends Component {
         const event = this.state.events.map((event) => {
             return (
                 
-              <div key={event.id} className="col-3 mt-3" >
+              <div key={event.id} className="col-lg-3 col-md-4 col-sm-8 mt-3" >
                 <Card >
-                  <CardImg src={event.image} alt={event.name} />
+                  <CardImg src={event.image} alt={event.name} height="150" />
                   <CardBody >
-                  <CardTitle tag="h5">{event.name}</CardTitle>
-                  <CardSubtitle><BiCalendarCheck/>{event.Date}</CardSubtitle>
-                  <CardSubtitle><IoMdTime/>{event.Time}</CardSubtitle>
-                  <CardSubtitle><BsFillPeopleFill/>{event.seats}</CardSubtitle>
-                  <CardTitle tag="h5">{event.price}</CardTitle>
+                  <CardTitle tag="h5" style={{textAlign: "left"}}  >{event.name}</CardTitle>
+                  <CardSubtitle style={{textAlign: "left"}}><BiCalendarCheck/>{event.Date}</CardSubtitle>
+                  <CardSubtitle style={{textAlign: "left"}}><IoMdTime/>{event.Time}</CardSubtitle>
+                  <CardSubtitle style={{textAlign: "left"}}><BsFillPeopleFill/>{event.seats} seats</CardSubtitle>
+                  <CardTitle style={{textAlign: "left"}} tag="h5">{event.price}</CardTitle>
                   </CardBody>
                 </Card>
               </div>
